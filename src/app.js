@@ -11,7 +11,7 @@ class App{
     #pages;
     #currentPage;
     #talentSelected = new Set();
-    #totalMax=20;
+    #totalMax=100;
     #isEnd = false;
     #selectedExtendTalent = null;
     #hintTimeout;
@@ -203,7 +203,7 @@ class App{
                     return;
                 }
                 talentPage.find('#next').hide()
-                this.#totalMax = 20 + this.#life.getTalentAllocationAddition(Array.from(this.#talentSelected).map(({id})=>id));
+                this.#totalMax = 80 + this.#life.getTalentAllocationAddition(Array.from(this.#talentSelected).map(({id})=>id));
                 this.switch('property');
             })
 
