@@ -6,7 +6,8 @@
         "test": "node test",
         "xlsxTransform": "node utils/xlsxTransform.js data",
         "dev": "webpack serve --open /view/index.html",
-        "build": "webpack --mode production"
+        "build": "webpack --mode production",
+        "editor": "node editor"
     },
     "dependencies": {
         "@babel/core": "^7.15.4",

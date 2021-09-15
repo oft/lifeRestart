@@ -134,7 +134,7 @@ class App{
 
         achievementPage
             .find('#rank')
-            .click(()=>this.hint('别卷了，没有排行榜'));
+            .click(()=>this.hint('别点了，没有排行榜'));
         // Talent
         const talentPage = $(`
         <div id="main">
